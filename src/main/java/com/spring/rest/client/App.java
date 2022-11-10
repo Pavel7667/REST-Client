@@ -30,6 +30,14 @@ public class App {
         }
         //
         Employee employeeByID = communication.getEmployee(10);
-        log4j.info("\nShow single object"+employeeByID);
+        log4j.info("\nShow single object " + employeeByID);
+        //
+        Employee employee =
+                new Employee("Emily", "Jackson", "IT", 600);
+        // if set same id -> we will change Object with this id
+        employee.setId(14);
+        communication.saveOrUpdateEmployee(employee);
+        log4j.info("\nShow new or changed object " + employee);
+        //
     }
 }
