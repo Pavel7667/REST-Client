@@ -41,8 +41,14 @@ public class Communication {
         return responseEntity.getBody();
     }
 
+    /**
+     * Make URL for http request and get JSON Object from DB by ID
+     * @param id of object in DB
+     * @return JSON Object turned into Java object
+     */
     public Employee getEmployee(int id){
-        return null;
+        return restTemplate.getForObject(URL+"/"+id,
+                Employee.class);
     }
 
     public void saveEmployee(Employee employee){

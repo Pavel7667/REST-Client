@@ -29,5 +29,7 @@ public class App {
             log4j.info(e);
         }
         //
+        Employee employeeByID = communication.getEmployee(10);
+        log4j.info("\nShow single object"+employeeByID);
     }
 }
