@@ -78,7 +78,14 @@ public class Communication {
         }
     }
 
+    /**
+     * The deleteEmployee using URL and id, make delete request for URL
+     * like: /api/employees/id
+     *
+     * @param id of Object in DB
+     */
     public void deleteEmployee(int id) {
-
+        restTemplate.delete(URL + "/" + id);
+        log4j.info("\nObject with id " + id + " was deleted");
     }
 }

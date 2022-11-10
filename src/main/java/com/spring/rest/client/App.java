@@ -39,5 +39,6 @@ public class App {
         communication.saveOrUpdateEmployee(employee);
         log4j.info("\nShow new or changed object " + employee);
         //
+        communication.deleteEmployee(14);
     }
 }
