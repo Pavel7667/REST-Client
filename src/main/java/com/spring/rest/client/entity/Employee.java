@@ -22,4 +22,15 @@ public class Employee {
         this.department = department;
         this.salary = salary;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", department='" + department + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
 }
